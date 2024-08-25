@@ -2,8 +2,9 @@
 
 <div style="text-align:center">
 <h1>Mobile Browser Detector</h1>
-<p id="info">Detecting...</p>
+<p id="info">Waiting to detect</p>
 <button id="detect" onclick="detect()">Detect</button>
+<a href="/index.html" download="mobilebrowserdetector.html"><button>Download as HTML</button></a>
 </div>
 
 <script>
@@ -20,13 +21,11 @@
          || navigator.userAgent.match(/Windows Phone/i)) {
             a = true ;
            info.textContent = "You are using a mobile browser."
+           alert("You are using a mobile browser.")
          } else {
             a = false ;
-
-           info.textContent = "You are not using a mobile browser."
+            info.textContent = "You are not using a mobile browser."
+            alert("You are not using a mobile browser.")
   }
 }
 </script>
-<div style="text-align:bottom">
-<a href="/index.html" download="mobilebrowserdetector.html"><button>Download as HTML</button></a>
-</div>
