@@ -1,9 +1,11 @@
 <title>Mobile Browser Detector</title>
+
 <center>
 <h1>Mobile Browser Detector</h1>
 <p id="info">Detecting...</p>
 </center>
 <script>
+  let inform = document.getElementById(info)
   var a;
       var answer = document.getElementById("result"); function myfunction() {
          if (navigator.userAgent.match(/Android/i)
@@ -14,9 +16,11 @@
          || navigator.userAgent.match(/BlackBerry/i)
          || navigator.userAgent.match(/Windows Phone/i)) {
             a = true ;
-           info.textContent = "You are using a mobile browser"
+           let inform = "You are using a mobile browser"
+           info.textContent = (inform)
          } else {
             a = false ;
-           info.textContent = "You are not using a mobile browser".
+           let inform = "You are not using a mobile browser"
+           info.textContent = (inform)
          }
 </script>
