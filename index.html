@@ -3,11 +3,12 @@
 <center>
 <h1>Mobile Browser Detector</h1>
 <p id="info">Detecting...</p>
+<button id="detect" onclick="detect()">Detect</button>
 </center>
 <script>
   let inform = document.getElementById(info)
   var a;
-      var answer = document.getElementById("result"); function myfunction() {
+      var answer = document.getElementById("result"); function detect() {
          if (navigator.userAgent.match(/Android/i)
          || navigator.userAgent.match(/webOS/i)
          || navigator.userAgent.match(/iPhone/i)
