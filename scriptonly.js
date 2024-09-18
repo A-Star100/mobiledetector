@@ -1,6 +1,4 @@
-let inform = document.getElementById(info)
-  var a;
-      var answer = document.getElementById("result"); 
+ var a;
   function detect() {
     if (navigator.userAgent.match(/Android/i)
          || navigator.userAgent.match(/webOS/i)
@@ -10,10 +8,11 @@ let inform = document.getElementById(info)
          || navigator.userAgent.match(/BlackBerry/i)
          || navigator.userAgent.match(/Windows Phone/i)) {
             a = true ;
-           info.textContent = "You are using a mobile browser."
+         alert("You are using a mobile browser") ;
          } else {
             a = false ;
-
-           info.textContent = "You are not using a mobile browser."
+      alert("You not are using a mobile browser") ;
+            
   }
 }
+
