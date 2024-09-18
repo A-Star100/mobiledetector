@@ -16,3 +16,4 @@
   }
 }
 
+// This method isn't exactly foolproof, as there are tools that let you change the NavigatorUserAgent string. But it is the most reliable out of all of them.
